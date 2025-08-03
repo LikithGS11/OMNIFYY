@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://cdn.prod.website-files.com/578142394a3a560c48f0927d/639c46744d03cc0429ce9a2d_Omnify%20Logo%20Dark-p-500.webp" alt="OmnifyFit Logo" width="180"/>
+</p>
+
 # OmnifyFit – Command Your Fitness Arena
 
 Welcome to **OmnifyFit**, where fitness meets precision control. Designed like a mission-ready control panel for fitness studios, this platform lets you launch, schedule, and manage high-impact workout sessions with zero friction.
@@ -173,7 +177,6 @@ OmnifyFit/
 A basic HTML-based frontend powered by **TailwindCSS** is included under the `/templates` and `/static` folders.
 
 ---
----
 
 ## Feedback & Support 🚀
 
@@ -188,6 +191,6 @@ Ready to join the squad? Let’s build something awesome together.
 
 ---
 
-![OmnifyFit Banner](https://cdn.pixabay.com/photo/2016/11/22/19/15/workout-1850925_1280.jpg)
+![OmnifyFit Banner]([https://cdn.pixabay.com/photo/2016/11/22/19/15/workout-1850925_1280.jpg](https://cdn.prod.website-files.com/578142394a3a560c48f0927d/639c46744d03cc0429ce9a2d_Omnify%20Logo%20Dark-p-500.webp))
 
 > *“Code hard, train harder.”*
