@@ -178,19 +178,30 @@ A basic HTML-based frontend powered by **TailwindCSS** is included under the `/t
 
 ---
 
-## Feedback & Support 🚀
+---
 
-If this project helped you level up:
+## 🕹 Feedback & Support – Join the Dev Quest
 
-⭐️ Give it a star on [GitHub](https://github.com/LikithGS11/OmnifyFit)  
-🐛 Found a bug or want a new feature? Open an issue and let’s squash it  
-🛠 Want to build on it? Fork the repo and mod away
+<div align="center">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/star/star.png" alt="GitHub Star" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/fork/fork.png" alt="GitHub Fork" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/issues/issues.png" alt="GitHub Issues" width="40" height="40"/>
+</div>
 
-Thanks for checking out **OmnifyFit** — your fitness command center.  
-Ready to join the squad? Let’s build something awesome together.
+### If this project helped you level up:
+
+- ⭐ **Smash that star** on [GitHub](https://github.com/LikithGS11/OmnifyFit) to power up the repo  
+- 🐞 **Found a bug or a boss to defeat?** Open an issue and let’s tackle it together  
+- ⚔️ **Want to mod the engine?** Fork it and start crafting your version of the game
 
 ---
 
-![OmnifyFit Banner]([https://cdn.pixabay.com/photo/2016/11/22/19/15/workout-1850925_1280.jpg](https://cdn.prod.website-files.com/578142394a3a560c48f0927d/639c46744d03cc0429ce9a2d_Omnify%20Logo%20Dark-p-500.webp))
+> 🧠 **OmnifyFit** isn’t just a booking tool — it’s your **fitness command center**  
+> Ready to **join the squad** and push the code frontier?
 
-> *“Code hard, train harder.”*
+**Thanks for playing the OmnifyFit game. Let’s build something legendary.**
+
+---
+
+> *“Code hard, train harder.”* 🎮💪
+
