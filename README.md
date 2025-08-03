@@ -178,14 +178,7 @@ A basic HTML-based frontend powered by **TailwindCSS** is included under the `/t
 
 ---
 
-## 🕹 Feedback & Support – Join the Dev Quest
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/github/explore/main/topics/star/star.png" alt="GitHub Star" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/github/explore/main/topics/fork/fork.png" alt="GitHub Fork" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/github/explore/main/topics/issues/issues.png" alt="GitHub Issues" width="40" height="40"/>
-</div>
-
+## 🕹 Feedback & Support – 
 ### If this project helped you level up:
 
 - ⭐ **Smash that star** on [GitHub](https://github.com/LikithGS11/OmnifyFit) to power up the repo  
