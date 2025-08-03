@@ -178,8 +178,6 @@ A basic HTML-based frontend powered by **TailwindCSS** is included under the `/t
 
 ---
 
----
-
 ## 🕹 Feedback & Support – Join the Dev Quest
 
 <div align="center">
@@ -193,15 +191,6 @@ A basic HTML-based frontend powered by **TailwindCSS** is included under the `/t
 - ⭐ **Smash that star** on [GitHub](https://github.com/LikithGS11/OmnifyFit) to power up the repo  
 - 🐞 **Found a bug or a boss to defeat?** Open an issue and let’s tackle it together  
 - ⚔️ **Want to mod the engine?** Fork it and start crafting your version of the game
-
 ---
-
-> 🧠 **OmnifyFit** isn’t just a booking tool — it’s your **fitness command center**  
-> Ready to **join the squad** and push the code frontier?
-
-**Thanks for playing the OmnifyFit game. Let’s build something legendary.**
-
----
-
 > *“Code hard, train harder.”* 🎮💪
 
