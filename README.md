@@ -173,12 +173,21 @@ OmnifyFit/
 A basic HTML-based frontend powered by **TailwindCSS** is included under the `/templates` and `/static` folders.
 
 ---
-## Feedback & Support
+---
 
-If you found this project helpful:
+## Feedback & Support 🚀
 
-- Consider giving it a star on GitHub  
-- Share your feedback or suggestions via issues  
-- Fork and contribute to enhance the project  
+If this project helped you level up:
 
-Thank you for exploring OmnifyFit!
+⭐️ Give it a star on [GitHub](https://github.com/LikithGS11/OmnifyFit)  
+🐛 Found a bug or want a new feature? Open an issue and let’s squash it  
+🛠 Want to build on it? Fork the repo and mod away
+
+Thanks for checking out **OmnifyFit** — your fitness command center.  
+Ready to join the squad? Let’s build something awesome together.
+
+---
+
+![OmnifyFit Banner](https://cdn.pixabay.com/photo/2016/11/22/19/15/workout-1850925_1280.jpg)
+
+> *“Code hard, train harder.”*
