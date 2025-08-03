@@ -1,98 +1,95 @@
-## 💪 OmnifyFit – Fitness Studio Booking API
+# 💪 OmnifyFit – Fitness Studio Booking API
 
-**OmnifyFit** is a simple, powerful, and developer-friendly **REST API** built with **Flask** and **SQLite**, enabling users to browse, book, and manage fitness classes. Designed with clarity, performance, and timezone accuracy, it's the perfect micro-project for showcasing backend development skills.
+OmnifyFit is a lightweight, timezone-aware booking API built with **Flask** and **SQLite**, allowing users to view, book, and manage fitness classes seamlessly. It’s a fast and beginner-friendly backend project — ideal for learning or real-world use.
 
 ---
 
-## 🚀 Quick Setup
+## 📦 Features
 
-### 1️⃣ Clone the Repo
+- ✅ Browse available fitness classes
+- 🧘 Book sessions with email confirmation
+- 📧 View bookings via client email
+- 🌐 Timezone handling with Python’s `zoneinfo`
+- 🔥 Clean API built on Flask
+- 🗃️ SQLite – lightweight and easy to set up
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/LikithGS11/OmnifyFit.git
 cd OmnifyFit
 ```
 
-### 2️⃣ Install Dependencies
+### 2. Setup Virtual Environment (Recommended)
+
+```bash
+# Create environment
+python -m venv venv
+
+# Activate environment
+# Windows
+venv\Scripts\activate
+# macOS/Linux
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the Application
+### 4. Run the App
+
 ```bash
 python app.py
 ```
 
-🌐 Server running at: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+Visit your app at: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
-## 🧰 Technologies Used
+## 🧭 API Endpoints
 
-- 🐍 Python 3
-- 🔥 Flask – lightweight backend framework
-- 🗃️ SQLite – embedded relational database
-- 🌍 ZoneInfo – timezone conversion (Python 3.9+)
-- 🖼️ HTML/CSS – for optional demo interface
+### ➤ `GET /classes` – List all fitness classes
 
----
-
-## 🗂️ Project Structure
-
-```
-OmnifyFit/
-├── app.py             # Main Flask app
-├── create_db.py       # Script to seed class data
-├── templates/         # HTML templates for frontend
-│   └── base.html
-├── static/            # Optional CSS/JS
-├── requirements.txt   # Python dependencies
-└── README.md          # This file
-```
-
----
-
-## 🧪 API Endpoints
-
-### 📅 1. Get All Classes  
-**GET** `/classes`  
-Returns all available classes.
-
-**Sample Response**
 ```json
 [
   {
     "id": 1,
-    "name": "Yoga",
-    "datetime": "2025-06-09T18:00:00+05:30",
-    "instructor": "Aditi Sharma",
-    "available_slots": 10
+    "name": "HIIT Workout",
+    "datetime": "2025-08-05T07:00:00+05:30",
+    "instructor": "Meera Verma",
+    "available_slots": 8
   }
 ]
 ```
 
 ---
 
-### 📝 2. Book a Class  
-**POST** `/book`  
-Book a class by sending a JSON payload.
+### ➤ `GET /book`
 
-**Request Body**
+**Params (JSON body or query):**
 ```json
 {
   "class_id": 1,
-  "client_name": "Riya Sharma",
-  "client_email": "riya@example.com"
+  "client_name": "Ayaan Khan",
+  "client_email": "ayaan@example.com"
 }
 ```
 
-**Success Response**
+**Success Response:**
 ```json
 {
-  "message": "Booking successful for Yoga at 2025-06-09T18:00:00+05:30"
+  "message": "Booking successful for HIIT Workout at 2025-08-05T07:00:00+05:30"
 }
 ```
 
-**Error Response**
+**Error Response:**
 ```json
 {
   "error": "No slots available for this class"
@@ -101,60 +98,53 @@ Book a class by sending a JSON payload.
 
 ---
 
-### 📧 3. Get Bookings by Email  
-**GET** `/bookings?email=riya@example.com`  
-Returns bookings linked to a client’s email.
+### ➤ `GET /bookings?email=ayaan@example.com` – View user bookings
 
-**Sample Response**
 ```json
 [
   {
-    "class_name": "Yoga",
-    "datetime": "2025-06-09T18:00:00+05:30",
-    "instructor": "Aditi Sharma"
+    "class_name": "HIIT Workout",
+    "datetime": "2025-08-05T07:00:00+05:30",
+    "instructor": "Meera Verma"
   }
 ]
 ```
 
 ---
 
-## 🕒 Timezone Handling
+## 🕓 Timezone Awareness
 
-- All class times are stored in **UTC** inside the database.
-- API responses return time in **UTC**.
-- On the frontend (HTML), JavaScript auto-converts the datetime to the **user’s local timezone** using `toLocaleString()`.
-
----
-
-## 🧘‍♂️ Class Types Overview
-
-| Class Name       | Description                                                |
-|------------------|------------------------------------------------------------|
-| 🧘 Yoga           | Improve flexibility and mindfulness                        |
-| 💃 Zumba          | Dance-based cardio to boost energy                         |
-| 🔥 HIIT           | High-Intensity training for quick results                  |
-| 🏋️ Strength Train | Muscle-building resistance workouts                        |
-| 🕺 Dance Cardio    | Fun cardio routines with choreography                      |
+- All datetime entries are stored in **UTC** internally.
+- API responses provide **ISO 8601** strings with timezones.
+- Client/UI can convert to local timezone using JavaScript (`Intl.DateTimeFormat`).
 
 ---
 
-## 🎥 Live Demo Walkthrough
+## 🗂️ Project Structure
 
-▶️ **Loom Video Walkthrough**:  
-[https://www.loom.com/share/4c5755f139bb425fb6e81ab7a0169e86](https://www.loom.com/share/4c5755f139bb425fb6e81ab7a0169e86)
+```bash
+OmnifyFit/
+├── app.py             # Main application
+├── create_db.py       # DB seeding script
+├── requirements.txt   # Dependencies
+├── templates/         # Optional UI (HTML)
+│   └── base.html
+├── static/            # CSS or JS files (if any)
+└── README.md
+```
 
 ---
 
-## 🙋‍♂️ Author
+## 📽️ Loom Demo
+
+🎥 [Watch Demo Walkthrough](https://www.loom.com/share/4c5755f139bb425fb6e81ab7a0169e86)
+
+---
+
+## 👨‍💻 Author
 
 **Likith G S**  
-Python Developer | AI/ML Enthusiast  
-📧 likithgs11@gmail.com  
-🔗 [GitHub Profile](https://github.com/LikithGS11)
+Feel free to fork, star ⭐, or suggest improvements!
 
 ---
-
-## 📄 License
-
-This project is open for educational and portfolio use.  
-© 2025 OmnifyFit. All rights reserved.
+```
