@@ -203,3 +203,8 @@ jinja2.exceptions.TemplateNotFound: home_dark.html
 2025-08-03 21:35:27,636 [INFO] Retrieved bookings for likithkrishna02@gmail.com
 2025-08-03 22:25:08,759 [INFO] Retrieved bookings for likithkrishna02@gmail.com
 2025-08-03 22:25:13,407 [INFO] Classes retrieved successfully.
+2025-08-03 23:04:56,026 [INFO] Classes retrieved successfully.
+2025-08-03 23:05:01,212 [INFO] Attempting booking: client_email=likithmanju161@gmail.com, class_id=2, client_name=Likith G S
+2025-08-03 23:05:01,218 [INFO] Booking successful for likithmanju161@gmail.com in class 2
+2025-08-03 23:05:01,235 [INFO] Classes retrieved successfully.
+2025-08-03 23:05:07,490 [INFO] No bookings found for email: likith@gmail.com
