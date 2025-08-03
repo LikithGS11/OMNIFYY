@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Classes{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <h1 class="text-3xl font-bold neon-glow font-orbitron mb-8 text-center">Available Classes</h1>
+  
+  <div class="overflow-x-auto">
+    <!-- Classes Table -->
+    <table class="neon-table w-full">
+      <thead>
+        <tr>
+          <th class="py-4 px-6">S No</th>
+          <th class="py-4 px-6">Activity</th>
+          <th class="py-4 px-6">Instructor</th>
+          <th class="py-4 px-6">DateTime</th>
+          <th class="py-4 px-6">Total Slots</th>
+          <th class="py-4 px-6">Available Slots</th>
+          <th class="py-4 px-6">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for class in classes %}
+        <tr class="hover:bg-gray-800 transition-colors duration-200">
+          <td class="py-4 px-6 border-b border-gray-700">{{ class.id }}</td>
+          <td class="py-4 px-6 border-b border-gray-700">{{ class.name }}</td>
+          <td class="py-4 px-6 border-b border-gray-700">{{ class.instructor }}</td>
+          <td class="py-4 px-6 border-b border-gray-700">
+            <span class="datetime" data-dt="{{ class.datetime }}"></span>
+          </td>
+          <td class="py-4 px-6 border-b border-gray-700">{{ class.total_slots }}</td>
+          <td class="py-4 px-6 border-b border-gray-700">{{ class.available_slots }}</td>
+          <td class="py-4 px-6 border-b border-gray-700">
+            {% if class.available_slots > 0 %}
+              <a href="/book?class_id={{ class.id }}" class="neon-button px-4 py-2 text-sm rounded">
+                Book
+              </a>
+            {% else %}
+              <span class="text-gray-500">Full</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

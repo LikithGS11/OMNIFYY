@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Bookings{% endblock %}
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <h1 class="text-3xl font-bold neon-glow font-orbitron mb-8 text-center">Your Booked Classes</h1>
+  
+  <div class="overflow-x-auto">
+    <!-- Bookings Table -->
+    <table class="neon-table w-full">
+      <thead>
+        <tr>
+          <th class="py-4 px-6">S No</th>
+          <th class="py-4 px-6">Class Name</th>
+          <th class="py-4 px-6">Instructor</th>
+          <th class="py-4 px-6">DateTime</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for class in class_details %}
+        <tr class="hover:bg-gray-800 transition-colors duration-200">
+          <td class="py-4 px-6 border-b border-gray-700">{{ loop.index }}</td>
+          <td class="py-4 px-6 border-b border-gray-700">{{ class[0] }}</td>
+          <td class="py-4 px-6 border-b border-gray-700">{{ class[2] }}</td>
+          <td class="py-4 px-6 border-b border-gray-700">
+            <span class="datetime" data-dt="{{ class[1] }}"></span>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

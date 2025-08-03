@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% block title %}Welcome to OmnifyFit{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Hero Section -->
+    <section class="glassmorphism p-8 mb-12 neon-border">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div>
+                <!-- Main Heading -->
+                <h1 class="text-5xl font-bold neon-glow font-orbitron mb-6">OmnifyFit</h1>
+                <h2 class="text-3xl font-bold text-text-primary mb-4">Book Your Fitness Journey with Ease</h2>
+
+                <!-- Short Intro -->
+                <p class="text-text-secondary mb-6 max-w-xl text-lg">
+                    Discover our expert-led classes designed to fit your lifestyle and fitness goals.
+                </p>
+
+                <!-- CTA Button -->
+                <a href="/classes" class="neon-button inline-block px-8 py-4 text-lg rounded-lg">
+                    Browse Classes
+                </a>
+            </div>
+
+            <div>
+<!-- Image removed as per user request -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Types Section -->
+    <section class="mb-16">
+        <h3 class="text-3xl font-bold text-center mb-12 neon-glow font-orbitron">Class Types</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Yoga -->
+            <div class="glassmorphism p-6 neon-border">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl mr-3">🧘</span>
+                    <h4 class="text-2xl font-bold text-neon-purple">Yoga</h4>
+                </div>
+                <p class="text-text-secondary">
+                    Improve flexibility, reduce stress, and connect with your inner peace through guided yoga sessions.
+                </p>
+            </div>
+
+            <!-- Zumba -->
+            <div class="glassmorphism p-6 neon-border">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl mr-3">💃</span>
+                    <h4 class="text-2xl font-bold text-neon-pink">Zumba</h4>
+                </div>
+                <p class="text-text-secondary">
+                    Dance your way to fitness with energetic, calorie-burning Zumba routines.
+                </p>
+            </div>
+
+            <!-- HIIT -->
+            <div class="glassmorphism p-6 neon-border">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl mr-3">🔥</span>
+                    <h4 class="text-2xl font-bold text-neon-blue">HIIT</h4>
+                </div>
+                <p class="text-text-secondary">
+                    Push limits with High-Intensity Interval Training designed to burn fat and build endurance fast.
+                </p>
+            </div>
+
+            <!-- Strength Training -->
+            <div class="glassmorphism p-6 neon-border">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl mr-3">🏋️</span>
+                    <h4 class="text-2xl font-bold text-neon-purple">Strength Training</h4>
+                </div>
+                <p class="text-text-secondary">
+                    Build muscle, boost metabolism, and improve overall strength with guided resistance workouts.
+                </p>
+            </div>
+
+            <!-- Dance Cardio -->
+            <div class="glassmorphism p-6 neon-border">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl mr-3">🕺</span>
+                    <h4 class="text-2xl font-bold text-neon-pink">Dance Cardio</h4>
+                </div>
+                <p class="text-text-secondary">
+                    Combine fun choreography with cardio to keep your heart healthy and spirits high.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="mb-16">
+        <h3 class="text-3xl font-bold text-center mb-12 neon-glow font-orbitron">Why Choose OmnifyFit?</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Feature Card 1 -->
+            <div class="glassmorphism p-6 neon-border hover:shadow-lg transition-all duration-300">
+                <div class="flex items-center mb-4">
+                    <img src="https://img.icons8.com/ios-filled/50/9F00FF/time.png" class="w-10 h-10 mr-3" alt="Flexible" />
+                    <h4 class="text-xl font-bold text-neon-purple">Flexible Scheduling</h4>
+                </div>
+                <p class="text-text-secondary">
+                    Easily book, reschedule, or cancel your classes anytime.
+                </p>
+            </div>
+
+            <!-- Feature Card 2 -->
+            <div class="glassmorphism p-6 neon-border hover:shadow-lg transition-all duration-300">
+                <div class="flex items-center mb-4">
+                    <img src="https://img.icons8.com/ios-filled/50/00FFFF/teacher.png" class="w-10 h-10 mr-3" alt="Instructors" />
+                    <h4 class="text-xl font-bold text-neon-blue">Expert Instructors</h4>
+                </div>
+                <p class="text-text-secondary">
+                    Train with certified professionals who motivate and guide you.
+                </p>
+            </div>
+
+            <!-- Feature Card 3 -->
+            <div class="glassmorphism p-6 neon-border hover:shadow-lg transition-all duration-300">
+                <div class="flex items-center mb-4">
+                    <img src="https://img.icons8.com/ios-filled/50/FF00FF/approval.png" class="w-10 h-10 mr-3" alt="Convenience" />
+                    <h4 class="text-xl font-bold text-neon-pink">Easy Booking</h4>
+                </div>
+                <p class="text-text-secondary">
+                    Seamless booking process with email confirmation and reminders.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

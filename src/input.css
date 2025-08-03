@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Orbitron';
+    src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+  }
+  
+  @font-face {
+    font-family: 'Exo 2';
+    src: url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap');
+  }
+}
+
+@layer components {
+  .neon-glow {
+    text-shadow: 0 0 10px #9F00FF, 0 0 20px #9F00FF;
+  }
+  
+  .neon-border {
+    box-shadow: 0 0 10px rgba(159, 0, 255, 0.5);
+  }
+  
+  .neon-button {
+    background: linear-gradient(45deg, #9F00FF, #00FFFF, #FF00FF);
+    background-size: 200% 200%;
+    border: none;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(159, 0, 255, 0.5);
+  }
+  
+  .neon-button:hover {
+    background-size: 100% 100%;
+    box-shadow: 
+      0 0 10px #9F00FF, 0 0 20px #9F00FF,
+      0 0 10px #00FFFF, 0 0 20px #00FFFF,
+      0 0 10px #FF00FF, 0 0 20px #FF00FF;
+    animation: gradientShift 2s ease infinite;
+  }
+  
+  .neon-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+  }
+  
+  .neon-button:hover::before {
+    left: 100%;
+  }
+  
+  .glassmorphism {
+    background: rgba(30, 30, 40, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .neon-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(159, 0, 255, 0.3);
+    border: 1px solid #9F00FF;
+  }
+  
+  .neon-table th {
+    background: linear-gradient(45deg, #9F00FF, #00FFFF);
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .neon-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(159, 0, 255, 0.2);
+  }
+  
+  .neon-table tr:hover {
+    background: rgba(159, 0, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .neon-input {
+    background: rgba(30, 30, 40, 0.6);
+    border: 1px solid rgba(159, 0, 255, 0.3);
+    color: #F0F0F0;
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-family: 'Exo 2', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .neon-input:focus {
+    outline: none;
+    border-color: #9F00FF;
+    box-shadow: 0 0 10px rgba(159, 0, 255, 0.5);
+  }
+  
+  .neon-input::placeholder {
+    color: #B0B0B0;
+  }
+  
+  .floating-label {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .floating-label input {
+    padding: 1.5rem 1rem 0.5rem;
+  }
+  
+  .floating-label label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    transition: all 0.3s ease;
+    color: #B0B0B0;
+    pointer-events: none;
+  }
+  
+  .floating-label input:focus + label,
+  .floating-label input:not(:placeholder-shown) + label {
+    top: 0.5rem;
+    font-size: 0.75rem;
+    color: #9F00FF;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .glowing-link {
+    color: #F0F0F0;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .glowing-link:hover {
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF;
+  }
+  
+  .glowing-link.active {
+    color: #FF00FF;
+    text-shadow: 0 0 10px #FF00FF;
+    background: rgba(255, 0, 255, 0.1);
+  }
+}
+
+@layer utilities {
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .text-neon-purple {
+    color: #9F00FF;
+  }
+  
+  .text-neon-blue {
+    color: #00FFFF;
+  }
+  
+  .text-neon-pink {
+    color: #FF00FF;
+  }
+  
+  .text-text-primary {
+    color: #F0F0F0;
+  }
+  
+  .text-text-secondary {
+    color: #B0B0B0;
+  }
+}

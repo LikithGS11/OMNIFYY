@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Book a Class{% endblock %}
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="flex justify-center items-center min-h-screen">
+    <div class="glassmorphism p-8 rounded-xl w-full max-w-md">
+      <!-- Page Heading -->
+      <h2 class="text-3xl font-bold neon-glow font-orbitron mb-6 text-center">Book Class</h2>
+      <h3 class="text-xl font-semibold mb-6 text-center text-neon-blue">{{ fitness_class[1] }}</h3>
+
+      <!-- Booking Form -->
+      <form method="POST">
+          <!-- Hidden input to pass selected class ID -->
+          <input type="hidden" name="class_id" value="{{ fitness_class[0] }}" />
+
+          <!-- Client Name Field -->
+          <div class="mb-6">
+              <div class="floating-label">
+                  <input type="text" name="client_name" id="client_name" required 
+                         class="neon-input w-full">
+                  <label for="client_name">Full Name</label>
+              </div>
+          </div>
+
+          <!-- Client Email Field -->
+          <div class="mb-6">
+              <div class="floating-label">
+                  <input type="email" name="client_email" id="client_email" required 
+                         class="neon-input w-full">
+                  <label for="client_email">Email Address</label>
+              </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" 
+                  class="neon-button w-full py-3 text-lg font-bold rounded-lg">
+              Book Class
+          </button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
