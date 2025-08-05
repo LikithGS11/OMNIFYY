@@ -86,7 +86,6 @@ OmnifyFit/
 ├── output.css
 ├── src/
 ├── static/
-│   └── fitness.jpg
 ├── templates/
 │   ├── base.html
 │   ├── home.html
